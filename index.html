@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power lifting trainer</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
+        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-hero.partial.html"></nav>
+    </header>
+    <main>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.intoduce.partial.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.about.partial.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.type-of-training.partial.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.variable-of-training.partial.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.coaches.partial.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.steps.partial.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.recomendation.partial.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.video-challenge.partial.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.thankfully.partial.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.free-train.partial.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.facts.partial.html"></div>
+    </main>
+    <footer>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></div>
+    </footer>
+  </body>
 </html>
